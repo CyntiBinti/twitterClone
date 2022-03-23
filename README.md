@@ -21,6 +21,8 @@ This is my first time coding in TypeScript and GraphQl (I'm used to using Vanill
 
 
 # How I Set Up My Local Dev Environment #
+
+## GitHub Repo ##
 I created a new repo on my GitHub called 'twitterClone'. Added a README.md and .gitignore file (Node). Once created, I git cloned it (using it's SSH key) into my generic coding directory on my laptop (via my terminal).
 
 ## Initial Set Up: Backend ##
@@ -58,4 +60,18 @@ $ cd frontend
 $ npm start
 ```
 
-The React localhost URL should automatically open up in a new browser window. Now the frontend is set up! --Enjoy hacking!
+The React localhost URL should automatically open up in a new browser window. Now the frontend is set up!
+
+## Connect Prisma Backend to PostgreSQL Database ##
+Download and install PostgreSQL via this link >> https://www.postgresql.org/download/
+
+Once the installation is complete, the database can be accessed by using pgAdmin (graphical interface tool for database management) that is installed automatically with PostgreSQL.
+
+Once opened, pgAdmin will ask for the password used as part of the setup wizard when installing PostgreSQL.
+
+Once downloaded then refer to the following documentation >> https://www.prisma.io/docs/concepts/database-connectors/postgresql
+
+## Connect Frontend to Backend ##
+
+~~~~~
+-- Enjoy! Happy Hacking!
