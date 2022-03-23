@@ -9,14 +9,14 @@ This is my first time coding in TypeScript and GraphQl (I'm used to using Vanill
 ### BACKEND ###
 - TypeScript (programming language)
 - GraphQL (APIs)
-- Prisma (ORM)
+- Prisma (ORM -- database connector)
 - Node.js (server-side language)
 - PostgreSQL (database)
 
 ### FRONTEND ###
 - React (frontend library)
 - TypeScript (programming language)
-- Apollo Client (connects to backend)
+- Apollo Client (facilitates connection to backend for GraphQL usage)
 - CSS (styling)
 
 
