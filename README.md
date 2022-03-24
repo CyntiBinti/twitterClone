@@ -63,7 +63,7 @@ $ npm start
 The React localhost URL should automatically open up in a new browser window. Now the frontend is set up!
 
 ## Connect Prisma Backend to PostgreSQL Database ##
-# Creating the Database #
+### Creating the Database ###
 Download and install PostgreSQL via this link >> https://www.postgresql.org/download/
 
 Once the installation is complete, the database can be accessed by using pgAdmin (graphical interface tool for database management) that is also installed with PostgreSQL.
@@ -92,9 +92,9 @@ DATABASE_URL = "postgresql://<your database user>:<database password for user, i
 ```
 nb: again, refer to this doc for further guidance with this https://www.prisma.io/docs/concepts/database-connectors/postgresql
 
-# Creating the Database Schema #
+### Creating the Database Schema ###
 
 ## Connect Frontend to Backend ##
 
-~~~~~
+
 -- Enjoy! Happy Hacking!
