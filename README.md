@@ -21,10 +21,10 @@ This is my first time coding in TypeScript and GraphQl (I'm used to using Vanill
 
 # How I Set Up My Local Dev Environment #
 
-## GitHub Repo ##
+## 1. GitHub Repo ##
 I created a new repo on my GitHub called 'twitterClone'. Added a README.md and .gitignore file (Node). Once created, I git cloned it (using it's SSH key) into my generic coding directory on my laptop (via my terminal).
 
-## Initial Set Up: Backend ##
+## 2. Initial Set Up: Backend ##
 Open your coding IDE (e.g. Visual Studio Code), cd into the 'twitterClone' directory, and in your terminal git clone this 'ready-to-run' Prisma example projects for boiler plate authentication code (https://github.com/prisma/prisma-examples) using the SSH key from the repo:
 
 ```
@@ -44,7 +44,7 @@ $ npm run dev
 
 Click the localhost URL in the terminal to open up the server sandbox running Graphql. Now the backend is set up!
 
-## Initial Set Up: Frontend ##
+## 3. Initial Set Up: Frontend ##
 Open up a new terminal (should automatically open into the root directory 'twitterClone'), and run the following command to install the react-app and also typeScript (https://create-react-app.dev/docs/adding-typescript/):
 
 ```
@@ -62,8 +62,8 @@ $ npm start
 
 The React localhost URL should automatically open up in a new browser window. Now the frontend is set up!
 
-## Connect Prisma Backend to PostgreSQL Database ##
-### Creating the Database ###
+## 4. Connect Prisma Backend to PostgreSQL Database ##
+### a. Creating the Database ###
 Download and install PostgreSQL via this link >> https://www.postgresql.org/download/
 
 Once the installation is complete, the database can be accessed by using pgAdmin (graphical interface tool for database management) that is also installed with PostgreSQL.
@@ -92,9 +92,9 @@ DATABASE_URL = "postgresql://<your database user>:<database password for user, i
 ```
 nb: again, refer to this doc for further guidance with this https://www.prisma.io/docs/concepts/database-connectors/postgresql
 
-### Creating the Database Schema ###
+### b. Creating the Database Schema ###
 
-## Connect Frontend to Backend ##
+## 5. Connect Frontend to Backend ##
 
 
 -- Enjoy! Happy Hacking!
