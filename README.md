@@ -19,7 +19,6 @@ This is my first time coding in TypeScript and GraphQl (I'm used to using Vanill
 - Apollo Client (facilitates connection to backend for GraphQL usage)
 - CSS (styling)
 
-
 # How I Set Up My Local Dev Environment #
 
 ## GitHub Repo ##
@@ -59,17 +58,41 @@ Finally run the below commands to start React:
 $ cd frontend
 $ npm start
 ```
+(if an npm error occurs then run command 'npm install' to install dependencies, then run command 'npm start')
 
 The React localhost URL should automatically open up in a new browser window. Now the frontend is set up!
 
 ## Connect Prisma Backend to PostgreSQL Database ##
+# Creating the Database #
 Download and install PostgreSQL via this link >> https://www.postgresql.org/download/
 
-Once the installation is complete, the database can be accessed by using pgAdmin (graphical interface tool for database management) that is installed automatically with PostgreSQL.
+Once the installation is complete, the database can be accessed by using pgAdmin (graphical interface tool for database management) that is also installed with PostgreSQL.
 
 Once opened, pgAdmin will ask for the password used as part of the setup wizard when installing PostgreSQL.
 
-Once downloaded then refer to the following documentation >> https://www.prisma.io/docs/concepts/database-connectors/postgresql
+Create a new server and also a new database in that server (as per pgAdmin documentation).
+
+For that server, under 'Login/Group Roles', create a new user for yourself (remember to toggle privileges)
+
+In VS code, create a new '.env' file in the 'prisma' folder (under the 'server' directory). This is where the environmental variables will be stored.
+
+In the same 'prisma' folder, edit lines 5-8 (datasource db object) with the following taken from this source (https://www.prisma.io/docs/concepts/database-connectors/postgresql):
+
+```
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+```
+
+Then in the '.env' file define the DATABASE_URL as:
+
+```
+DATABASE_URL = "postgresql://<your database user>:<database password for user, if set>@localhost:5432/twitterClone"
+```
+nb: again, refer to this doc for further guidance with this https://www.prisma.io/docs/concepts/database-connectors/postgresql
+
+# Creating the Database Schema #
 
 ## Connect Frontend to Backend ##
 
